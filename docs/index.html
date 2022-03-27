@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
@@ -13,10 +13,22 @@
   <script>
     window.$docsify = {
       name: '',
-      repo: ''
+      repo: '',
+      loadSidebar: true,
+      subMaxLevel: 3,
+      alias: {
+        // '/01java/.*/_sidebar.md': '/01java/_sidebar.md',
+        // '/01java/.*/_sidebar.md': '/01java/_sidebar.md',
+        '/.*/_sidebar.md': '/_sidebar.md',
+      },
+      // loadNavbar: true,
     }
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-java.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1.27.0/components/prism-yaml.min.js"></script>
+  <!-- 复制代码插件 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
 </body>
 </html>
